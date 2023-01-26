@@ -1,11 +1,11 @@
 import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-
+import LoginPage from './pages/LoginPage';
+import LogOutPage from './pages/LogOutPage';
 const MyApp = () => {
 	return (
 		<React.Fragment>
-			<CssBaseline />
-			Hello World
+			<LoginPage></LoginPage>
+			{/* <LogOutPage></LogOutPage> */}
 		</React.Fragment>
 	);
 };
