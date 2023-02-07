@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from './formLoginPage.module.css';
 import googleIcon from '../images/icons8-google-48.png';
+import ErrorLoginModal from './ErrorLoginModal';
 
 const FormLoginPage = () => {
 	let [inputs, setInputs] = useState({});
@@ -8,17 +9,42 @@ const FormLoginPage = () => {
 	const handleChange = (event) => {
 		const name = event.target.name;
 		const value = event.target.value;
-		setInputs((prevState) => {return({ ...prevState, [name]: value })});
+
+		setInputs((prevState) => {
+			localStorage.setItem(`${name}`, `${value}`);
+			return { ...prevState, [name]: value };
+		});
 	};
+
+	useEffect(() => {
+		console.log('Effect Running');
+	}, []);
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		alert(inputs);
+		console.log(localStorage.getItem('password'));
+
+		// Storing the ID credentials in the browser's localstorage API temporarily
+
+		if (
+			(localStorage.getItem('password') === '' ||
+				localStorage.getItem('password').trim().length) < 6
+		) {
+			localStorage.removeItem('password');
+
+			alert('Please enter a valid password more than 7 characters');
+		} else {
+			console.log(inputs);
+			setInputs({});
+		}
 	};
 
 	return (
 		<React.Fragment>
+			{/* {localStorage.getItem("username") ?: */}
+			{/* <ErrorLoginModal></ErrorLoginModal> */}
 			<div className={styled.container}>
-				<form onSubmit={handleSubmit}>
+				<form onSubmit={handleSubmit} className={styled.formElement}>
 					<div className={styled.formSec}>
 						<label>Email ID </label>
 						<input

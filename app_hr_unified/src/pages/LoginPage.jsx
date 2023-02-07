@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginInputForm from '../components/FormLoginPage';
 import styled from './loginpage.module.css';
+
 const LoginPage = () => {
 	return (
 		<React.Fragment>
@@ -9,7 +10,7 @@ const LoginPage = () => {
 					<div className={styled.leftBox}>Left</div>
 				</div>
 				<div className={styled.centerSec}>
-					<h1>Login</h1>
+					<h1>HR_Unified</h1>
 					<LoginInputForm></LoginInputForm>
 				</div>
 				<div className={styled.rightBoxContainer}>

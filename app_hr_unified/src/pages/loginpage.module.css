@@ -1,7 +1,9 @@
 .container {
 	width: 100vw;
+	max-width: 1800px;
 	height: 100vh;
 	display: flex;
+
 	overflow: hidden;
 	position: relative;
 }
@@ -55,8 +57,15 @@
 	flex-direction: column;
 }
 
+div.centerSec > * {
+	margin: 3rem;
+}
+
 .centerSec > h1 {
 	margin-bottom: 4rem;
+	font-size: 3rem;
+	font-weight: 400;
+	color: rgb(79, 84, 84);
 }
 .rightBoxContainer {
 	flex: 1;
