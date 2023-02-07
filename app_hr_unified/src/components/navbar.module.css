@@ -59,12 +59,60 @@
 }
 
 .searchButtonIcon {
-	font-size: 1rem;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.rightIconSec {
+	flex: 2;
+	/* background-color: red; */
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.icon_Notification,
+.icon_LogOut {
+	font-size: 1.4rem;
+	background-color: white;
+}
+
+.userName {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.userLogOut {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.rightIconSec {
-	flex: 2;
+.notificationIcon,
+.userLogOut,
+.userName,
+.userProfilePic {
+	background-color: white;
+	border: none;
+	margin: 0 1.5rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.userLogOut > button,
+.notificationIcon > button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.img_DP {
+	width: 2rem;
+	height: 2rem;
 }

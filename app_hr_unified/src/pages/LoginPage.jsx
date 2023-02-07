@@ -7,14 +7,14 @@ const LoginPage = () => {
 		<React.Fragment>
 			<div className={styled.container}>
 				<div className={styled.leftBoxContainer}>
-					<div className={styled.leftBox}>Left</div>
+					<div className={styled.leftBox}></div>
 				</div>
 				<div className={styled.centerSec}>
 					<h1>HR_Unified</h1>
 					<LoginInputForm></LoginInputForm>
 				</div>
 				<div className={styled.rightBoxContainer}>
-					<div className={styled.rightBox}>Right</div>
+					<div className={styled.rightBox}></div>
 				</div>
 			</div>
 		</React.Fragment>

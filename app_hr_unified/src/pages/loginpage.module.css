@@ -55,14 +55,16 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	height: 100vh;
 }
 
 div.centerSec > * {
-	margin: 3rem;
+	margin: 2rem;
 }
 
 .centerSec > h1 {
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
+	/* padding-bottom: 1rem; */
 	font-size: 3rem;
 	font-weight: 400;
 	color: rgb(79, 84, 84);
