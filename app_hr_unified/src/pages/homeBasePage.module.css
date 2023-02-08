@@ -1,5 +1,5 @@
 .homeContainer {
-	width: 100%;
+	width: 98vw;
 	max-width: 1850px;
 	display: flex;
 	justify-content: center;
@@ -8,20 +8,55 @@
 	position: relative;
 }
 
+.navbarSec {
+	width: 98vw;
+	max-width: 1850px;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-webkit-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-moz-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	margin-bottom: 0.5rem;
+	border-radius: 10px;
+}
 .mainSection {
-	width: 100vw;
+	width: 100%;
+
 	max-width: 1850px;
 	display: flex;
+	position: absolute;
+	top: 3rem;
+	/* left: 0; */
+	box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-webkit-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-moz-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	/* margin: 0.5rem 0; */
 }
 
 .left_topic_Sec {
-	flex: 1;
-	background-color: aqua;
-	height: 100vh;
+	width: 15%;
+	height: 90vh;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-webkit-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-moz-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	margin: 0.5rem 0;
+	border-radius: 10px;
 }
 
 .right_panel_Sec {
-	flex: 4;
-	background-color: rgb(98, 0, 255);
-	/* height: 100vh;  //This will have Scroll as more data expected */
+	width: 84%;
+	/* flex: 5; */
+
+	height: 200vh;
+	/* Temporary set at 200vh; should change to % or auto */
+	position: absolute;
+	left: 16%;
+	box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-webkit-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	-moz-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.83);
+	margin: 0.5rem 0;
+	border-radius: 10px;
 }

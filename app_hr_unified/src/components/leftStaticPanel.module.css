@@ -1,0 +1,77 @@
+.leftSection_container {
+	width: inherit;
+	height: 88vh;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.upperContainer {
+	background-color: rgb(245, 237, 247);
+	width: inherit;
+	height: 80%;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 10px;
+}
+
+.first_Sec,
+.second_Sec,
+.third_Sec {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+}
+
+.second_Sec {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.Dashboard,
+.Partner_Agencies,
+.Candidates,
+.Applications,
+.Support {
+	display: flex;
+	align-items: center;
+}
+.Dashboard,
+.Partner_Agencies,
+.Candidates,
+.Applications,
+.Support {
+}
+
+.iconImage {
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 1rem;
+}
+
+.iconTitle {
+	font-size: 1.1rem;
+}
+
+.lowerContainer {
+	display: flex;
+	width: 100%;
+	height: 10%;
+	border-radius: 10px;
+}
+.VersionStaticInfo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+	/* height: 15vh; */
+	background-color: rgb(245, 237, 247);
+	border-radius: 10px;
+}
