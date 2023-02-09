@@ -11,6 +11,7 @@ const LeftStaticPanel = () => {
 		<React.Fragment>
 			<div className={styled.leftSection_container}>
 				<div className={styled.logo}>HR_Unified</div>
+
 				<div className={styled.upperContainer}>
 					<div className={styled.first_Sec}>
 						<div className={styled.Dashboard}>

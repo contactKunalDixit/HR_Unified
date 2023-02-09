@@ -6,24 +6,28 @@
 	justify-content: space-between;
 	align-items: center;
 	border-right: 1px solid gray;
+	border-left: 1px solid gray;
 }
 
 .logo {
-	font-size: 2.5rem;
-	padding: 1rem 0;
+	font-size: 2rem;
+	padding: 0.5rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	border-bottom: 1.5px solid rgb(39, 2, 2);
 }
 
 .upperContainer {
-	background-color: rgb(245, 237, 247);
+	/* background-color: rgb(245, 237, 247); */
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: start;
 	border-radius: 10px;
+	height: 75vh;
 }
 
 .first_Sec,
@@ -31,13 +35,11 @@
 .third_Sec {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	/* flex: 1; */
+	margin-left: 1rem;
 }
 
-.second_Sec {
-	display: flex;
-	justify-content: space-evenly;
+.second_Sec > * {
+	margin: 1rem 0;
 }
 
 .Dashboard,
@@ -53,6 +55,7 @@
 .Candidates,
 .Applications,
 .Support {
+	/* padding: 0 1rem; */
 }
 
 .iconImage {
@@ -64,14 +67,14 @@
 }
 
 .iconTitle {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 
 .lowerContainer {
 	display: flex;
 	width: 100%;
 	/* height: 10%; */
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 .VersionStaticInfo {
 	width: 100%;
@@ -83,5 +86,5 @@
 	/* background-color: rgb(245, 237, 247); */
 	/* border-radius: 10px; */
 	border: none;
-	margin-bottom: 2rem;
+	margin-bottom: 0.5rem;
 }
