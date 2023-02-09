@@ -8,7 +8,7 @@ const Navbar = () => {
 	return (
 		<React.Fragment>
 			<div div className={styled.Navbar_container}>
-				<div className={styled.leftSec}>HR_Unified</div>
+				{/* <div className={styled.leftSec}></div> */}
 
 				<div className={styled.rightSec}>
 					<div className={styled.searchSec}>

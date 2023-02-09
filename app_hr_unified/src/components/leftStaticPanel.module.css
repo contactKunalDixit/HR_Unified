@@ -1,17 +1,25 @@
 .leftSection_container {
 	width: inherit;
-	height: 88vh;
-	padding: 0.5rem;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
+	border-right: 1px solid gray;
+}
+
+.logo {
+	font-size: 2.5rem;
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .upperContainer {
 	background-color: rgb(245, 237, 247);
-	width: inherit;
-	height: 80%;
-	padding: 1.5rem;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -24,7 +32,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	flex: 1;
+	/* flex: 1; */
 }
 
 .second_Sec {
@@ -62,7 +70,7 @@
 .lowerContainer {
 	display: flex;
 	width: 100%;
-	height: 10%;
+	/* height: 10%; */
 	border-radius: 10px;
 }
 .VersionStaticInfo {
@@ -72,6 +80,8 @@
 	align-items: center;
 	font-size: 0.9rem;
 	/* height: 15vh; */
-	background-color: rgb(245, 237, 247);
-	border-radius: 10px;
+	/* background-color: rgb(245, 237, 247); */
+	/* border-radius: 10px; */
+	border: none;
+	margin-bottom: 2rem;
 }

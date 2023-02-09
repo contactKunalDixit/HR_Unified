@@ -1,14 +1,16 @@
 .Navbar_container {
-	width: inherit;
+	width: 100%;
 	max-width: 1850px;
 	height: 3rem;
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
 	background-color: white;
+
+	padding: 1rem 0;
 }
 
-.leftSec {
+/* .leftSec {
 	width: 15%;
 	display: flex;
 	justify-content: center;
@@ -17,10 +19,10 @@
 	height: 3rem;
 	font-size: 2rem;
 	background-color: white;
-}
+} */
 .rightSec {
 	height: 3rem;
-	width: 85%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
