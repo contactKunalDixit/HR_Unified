@@ -6,6 +6,7 @@ import HubIcon from '@mui/icons-material/Hub';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import HandymanIcon from '@mui/icons-material/Handyman';
+import Divider from '@mui/material/Divider';
 
 const PageMenu = () => {
 	const [open, setOpen] = useState(false);
@@ -32,6 +33,7 @@ const PageMenu = () => {
 						horizontal: 'left',
 					}}
 				>
+					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
 						component='a'
@@ -46,10 +48,11 @@ const PageMenu = () => {
 					>
 						<HomeIcon sx={{ marginRight: '1rem' }} /> Dashboard
 					</MenuItem>
+					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
 						component='a'
-						href='#home'
+						href='#hrAgencies'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -61,10 +64,11 @@ const PageMenu = () => {
 						<Diversity3Icon sx={{ marginRight: '1rem' }} />
 						HR_Agencies
 					</MenuItem>
+					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
 						component='a'
-						href='#home'
+						href='#candidates'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -76,10 +80,11 @@ const PageMenu = () => {
 						<EmojiPeopleIcon sx={{ marginRight: '1rem' }} />
 						Candidates
 					</MenuItem>
+					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
 						component='a'
-						href='#home'
+						href='#applications'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -91,10 +96,11 @@ const PageMenu = () => {
 						<HubIcon sx={{ marginRight: '1rem' }} />
 						Applications
 					</MenuItem>
+					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
 						component='a'
-						href='#home'
+						href='#skills'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -106,6 +112,7 @@ const PageMenu = () => {
 						<HandymanIcon sx={{ marginRight: '1rem' }} />
 						Skills
 					</MenuItem>
+					<Divider></Divider>
 				</Menu>
 			</Box>
 		</React.Fragment>

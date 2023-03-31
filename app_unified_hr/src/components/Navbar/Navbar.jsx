@@ -72,6 +72,9 @@ function Navbar(props) {
 							</Typography>
 						</LogoSec>
 						<IconSec className='iconSec' sx={{ flex: '4' }}>
+							<Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
+								Todays date - Need to add API
+							</Box>
 							<Badge color='secondary' badgeContent={0} showZero>
 								<MailIcon sx={{ fontSize: '1.5rem' }} />
 							</Badge>
@@ -104,6 +107,7 @@ function Navbar(props) {
 				>
 					<MenuItem onClick={(e) => setOpen(false)}> Profile</MenuItem>
 					<MenuItem onClick={(e) => setOpen(false)}>My account</MenuItem>
+					<MenuItem onClick={(e) => setOpen(false)}>Support</MenuItem>
 					<MenuItem onClick={(e) => setOpen(false)}>Logout</MenuItem>
 				</Menu>
 			</AppBar1>

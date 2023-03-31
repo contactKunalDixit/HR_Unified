@@ -1,3 +1,19 @@
+<!-- As an HR oriented app, your dashboard page may contain various types of data analytics summaries that help users to make informed decisions. Here are some examples:
+
+Headcount Summary: This summary provides a quick overview of the total number of employees, new hires, terminations, and open positions.
+
+Employee Turnover Rate: This metric shows the percentage of employees who have left the company during a given period. It helps to identify trends and potential issues with employee retention.
+
+Recruitment Summary: This summary provides an overview of the recruitment process, including the number of applicants, interviews conducted, and offers made. It helps to track the progress of the hiring process.
+
+Employee Performance: This summary shows the performance of individual employees, including key performance indicators (KPIs) such as sales figures or project completion rates. It helps to identify top performers and areas for improvement.
+
+Diversity and Inclusion Summary: This summary shows the breakdown of employees by gender, race, and other demographic factors. It helps to identify areas where diversity and inclusion efforts can be improved.
+
+Employee Engagement Summary: This summary shows the level of employee engagement and satisfaction. It helps to identify areas where employee morale can be improved and potential issues that may impact employee retention.
+
+Compliance Summary: This summary shows the company's compliance with HR regulations and policies. It helps to identify areas where compliance efforts can be improved and potential risks to the company. -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +84,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+

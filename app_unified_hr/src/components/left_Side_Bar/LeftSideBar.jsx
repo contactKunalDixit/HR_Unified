@@ -10,11 +10,13 @@ import HubIcon from '@mui/icons-material/Hub';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import HandymanIcon from '@mui/icons-material/Handyman';
+import Divider from '@mui/material/Divider';
 
 const BoxSec = styled(Box)({
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
+	width: '90%',
 });
 
 const LeftSideBar = () => {
@@ -22,6 +24,7 @@ const LeftSideBar = () => {
 		<React.Fragment>
 			<BoxSec>
 				<List>
+					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
 						<ListItemButton component='a' href='#home'>
 							<ListItemIcon>
@@ -35,8 +38,9 @@ const LeftSideBar = () => {
 							/>
 						</ListItemButton>
 					</ListItem>
+					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
-						<ListItemButton component='a' href='#HRagencies'>
+						<ListItemButton component='a' href='#hrAgencies'>
 							<ListItemIcon>
 								<Diversity3Icon />
 							</ListItemIcon>
@@ -47,6 +51,7 @@ const LeftSideBar = () => {
 							/>
 						</ListItemButton>
 					</ListItem>
+					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
 						<ListItemButton component='a' href='#candidates'>
 							<ListItemIcon>
@@ -59,6 +64,7 @@ const LeftSideBar = () => {
 							/>
 						</ListItemButton>
 					</ListItem>
+					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
 						<ListItemButton component='a' href='#applications'>
 							<ListItemIcon>
@@ -71,6 +77,7 @@ const LeftSideBar = () => {
 							/>
 						</ListItemButton>
 					</ListItem>
+					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
 						<ListItemButton component='a' href='#skills'>
 							<ListItemIcon>
@@ -83,6 +90,7 @@ const LeftSideBar = () => {
 							/>
 						</ListItemButton>
 					</ListItem>
+					<Divider></Divider>
 				</List>
 			</BoxSec>
 		</React.Fragment>

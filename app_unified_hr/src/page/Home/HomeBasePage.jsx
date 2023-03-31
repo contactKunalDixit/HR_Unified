@@ -13,7 +13,7 @@ const Container1 = styled(Container)({
 const TopSec = styled(Box)({
 	width: '100%',
 	height: '4rem',
-	backgroundColor: 'red',
+	// backgroundColor: 'red',
 	display: 'flex',
 	justifyContent: 'center;',
 	alignItems: 'center',
