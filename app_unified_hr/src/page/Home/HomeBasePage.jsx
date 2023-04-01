@@ -3,12 +3,19 @@ import { Container, Box, styled, Paper, Grid } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Navbar from './../../components/Navbar/Navbar';
 import LeftSideBar from '../../components/left_Side_Bar/LeftSideBar';
+import CardDashboard from '../../components/Cards/CardDashboard';
+
 const Container1 = styled(Container)({
 	height: '100svh',
 	width: '100vw',
 	padding: '0.2rem',
 	paddingTop: '0',
 	position: 'relative',
+	'-ms-overflow-style': 'none' /* Internet Explorer 10+ */,
+	scrollbarWidth: 'none' /* Firefox */,
+	'&::-webkit-scrollbar': {
+		display: 'none' /* Safari and Chrome */,
+	},
 });
 
 const TopSec = styled(Box)({
@@ -48,7 +55,7 @@ const RightBox = styled(Box)({
 	justifyContent: 'center',
 	alignItems: 'center',
 	width: '100%',
-	backgroundColor: 'red',
+	// backgroundColor: 'red',
 });
 
 const HomeBase = () => {
@@ -260,6 +267,7 @@ const HomeBase = () => {
 									reiciendis, minus sequi accusamus neque quis, ipsum molestiae
 									omnis in molestias qui saepe nam excepturi, labore nemo. Porro
 									voluptates natus id minus?
+									<CardDashboard></CardDashboard>
 								</Paper>
 							</Box>
 						</RightBox>

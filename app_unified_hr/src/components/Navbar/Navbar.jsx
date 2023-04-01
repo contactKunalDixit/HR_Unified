@@ -48,7 +48,7 @@ const IconSec = styled(Box)({
 	display: 'flex',
 	justifyContent: 'flex-end',
 	alignItems: 'center',
-	gap: '1.5rem',
+	gap: '1rem',
 });
 function Navbar(props) {
 	const [open, setOpen] = useState(false);
@@ -67,7 +67,10 @@ function Navbar(props) {
 							<PageMenu></PageMenu>
 						</Box>
 						<LogoSec className='LogoSec' sx={{ flex: '1' }}>
-							<Typography variant='h4' sx={{ textAlign: 'center' }}>
+							<Typography
+								variant='h4'
+								sx={{ textAlign: 'center', marginRight: '1rem' }}
+							>
 								HR_Unified
 							</Typography>
 						</LogoSec>
