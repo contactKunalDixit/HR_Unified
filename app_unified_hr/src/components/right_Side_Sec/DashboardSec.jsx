@@ -13,7 +13,9 @@ const DashboardSec = () => {
 		<React.Fragment>
 			<Box
 				sx={{
-					width: '100%',
+					margin: '1rem',
+					padding: '1rem',
+					// width: '100%',
 					display: 'flex',
 					justifyContent: 'center',
 					alignItems: 'center',
@@ -23,8 +25,8 @@ const DashboardSec = () => {
 			>
 				<Paper
 					style={{
-						padding: '1rem',
-						margin: '1rem',
+						width: '100%',
+
 						height: '100%',
 						background:
 							'linear-gradient(4deg, rgba(255,255,255,1) 0%, rgba(214,221,232,1) 81%)',
@@ -38,6 +40,7 @@ const DashboardSec = () => {
 							justifyContent: 'space-evenly',
 							flexWrap: 'wrap',
 							gap: '2rem',
+							marginTop: '1rem',
 						}}
 					>
 						<PageTitle>Dashboard</PageTitle>

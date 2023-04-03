@@ -112,7 +112,7 @@ const HRAgencies = () => {
 						}}
 					>
 						{/* <Container> */}
-						<PageTitle>Applications</PageTitle>
+						<PageTitle>Skills</PageTitle>
 						{/* </Container> */}
 
 						<Card variant='outlined' sx={{ maxWidth: '345px' }}>
