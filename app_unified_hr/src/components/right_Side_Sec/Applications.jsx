@@ -191,7 +191,7 @@ const HRAgencies = () => {
 						}}
 					>
 						<PageTitle>
-							<Typography variant='h4'>Candidates List</Typography>{' '}
+							<Typography variant='h4'>Applications List</Typography>{' '}
 						</PageTitle>
 
 						<Paper sx={{ width: '100%', overflow: 'hidden' }}>

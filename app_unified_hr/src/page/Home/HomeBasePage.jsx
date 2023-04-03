@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Box, styled, Paper, Grid } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './../../components/Navbar/Navbar';
 import LeftSideBar from '../../components/left_Side_Bar/LeftSideBar';
 import DashboardSec from '../../components/right_Side_Sec/DashboardSec';
 import HRAgencies from '../../components/right_Side_Sec/HRAgencies';
 import Candidates from '../../components/right_Side_Sec/Candidates';
 import Applications from '../../components/right_Side_Sec/Applications';
-
+import Skills from '../../components/right_Side_Sec/Skills';
 const Container1 = styled(Container)({
 	height: '100svh',
 	width: '100vw',
@@ -85,10 +85,13 @@ const HomeBase = () => {
 							overflowY: 'scroll',
 						}}
 					>
-						<DashboardSec></DashboardSec>
-						<HRAgencies></HRAgencies>
-						<Candidates></Candidates>
-						<Applications></Applications>
+						<Routes>
+							<Route path='/' element={<DashboardSec />}></Route>
+							<Route path='/hragencies' element={<HRAgencies />}></Route>
+							<Route path='/candidates' element={<Candidates />}></Route>
+							<Route path='/applications' element={<Applications />}></Route>
+							<Route path='/skills' element={<Skills />}></Route>
+						</Routes>
 					</Box>
 				</BottomSec>
 			</Container1>

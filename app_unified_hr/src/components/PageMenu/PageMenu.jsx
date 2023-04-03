@@ -7,6 +7,7 @@ import Diversity3Icon from '@mui/icons-material/Diversity3';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import Divider from '@mui/material/Divider';
+import { NavLink } from 'react-router-dom';
 
 const PageMenu = () => {
 	const [open, setOpen] = useState(false);
@@ -36,8 +37,8 @@ const PageMenu = () => {
 					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
-						component='a'
-						href='#home'
+						component={NavLink}
+						to='/'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -51,8 +52,8 @@ const PageMenu = () => {
 					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
-						component='a'
-						href='#hrAgencies'
+						component={NavLink}
+						to='/hragencies'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -67,8 +68,8 @@ const PageMenu = () => {
 					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
-						component='a'
-						href='#candidates'
+						component={NavLink}
+						to='/candidates'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -83,8 +84,8 @@ const PageMenu = () => {
 					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
-						component='a'
-						href='#applications'
+						component={NavLink}
+						to='/applications'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',
@@ -99,8 +100,8 @@ const PageMenu = () => {
 					<Divider></Divider>
 					<MenuItem
 						onClick={(e) => setOpen(false)}
-						component='a'
-						href='#skills'
+						component={NavLink}
+						to='/skills'
 						sx={{
 							fontSize: '1.2rem',
 							display: 'flex',

@@ -11,6 +11,7 @@ import Diversity3Icon from '@mui/icons-material/Diversity3';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import HandymanIcon from '@mui/icons-material/Handyman';
 import Divider from '@mui/material/Divider';
+import { NavLink } from 'react-router-dom';
 
 const BoxSec = styled(Box)({
 	display: 'flex',
@@ -26,7 +27,7 @@ const LeftSideBar = () => {
 				<List>
 					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
-						<ListItemButton component='a' href='#home'>
+						<ListItemButton component={NavLink} to='/'>
 							<ListItemIcon>
 								<HomeIcon />
 							</ListItemIcon>
@@ -40,7 +41,7 @@ const LeftSideBar = () => {
 					</ListItem>
 					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
-						<ListItemButton component='a' href='#hrAgencies'>
+						<ListItemButton component={NavLink} to='/hragencies'>
 							<ListItemIcon>
 								<Diversity3Icon />
 							</ListItemIcon>
@@ -53,7 +54,7 @@ const LeftSideBar = () => {
 					</ListItem>
 					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
-						<ListItemButton component='a' href='#candidates'>
+						<ListItemButton component={NavLink} to='/candidates'>
 							<ListItemIcon>
 								<EmojiPeopleIcon />
 							</ListItemIcon>
@@ -66,7 +67,7 @@ const LeftSideBar = () => {
 					</ListItem>
 					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
-						<ListItemButton component='a' href='#applications'>
+						<ListItemButton component={NavLink} to='/applications'>
 							<ListItemIcon>
 								<HubIcon />
 							</ListItemIcon>
@@ -79,7 +80,7 @@ const LeftSideBar = () => {
 					</ListItem>
 					<Divider></Divider>
 					<ListItem disablePadding sx={{ margin: '1.5rem 0' }}>
-						<ListItemButton component='a' href='#skills'>
+						<ListItemButton component={NavLink} to='/skills'>
 							<ListItemIcon>
 								<HandymanIcon />
 							</ListItemIcon>
