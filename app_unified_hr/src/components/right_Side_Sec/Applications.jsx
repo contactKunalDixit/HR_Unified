@@ -33,39 +33,39 @@ const columns = [
 		align: 'right',
 		format: (value) => value.toLocaleString('en-US'),
 	},
-	{
-		id: 'density',
-		label: 'Density',
-		minWidth: 170,
-		align: 'right',
-		format: (value) => value.toFixed(2),
-	},
-];
-
-function createData(name, code, population, size) {
-	const density = population / size;
-	return { name, code, population, size, density };
-}
-
-const rows = [
-	createData('India', 'IN', 1324171354, 3287263),
-	createData('China', 'CN', 1403500365, 9596961),
-	createData('Italy', 'IT', 60483973, 301340),
-	createData('United States', 'US', 327167434, 9833520),
-	createData('Canada', 'CA', 37602103, 9984670),
-	createData('Australia', 'AU', 25475400, 7692024),
-	createData('Germany', 'DE', 83019200, 357578),
-	createData('Ireland', 'IE', 4857000, 70273),
-	createData('Mexico', 'MX', 126577691, 1972550),
-	createData('Japan', 'JP', 126317000, 377973),
-	createData('France', 'FR', 67022000, 640679),
-	createData('United Kingdom', 'GB', 67545757, 242495),
-	createData('Russia', 'RU', 146793744, 17098246),
-	createData('Nigeria', 'NG', 200962417, 923768),
-	createData('Brazil', 'BR', 210147125, 8515767),
+	// {
+	// 	id: 'Edit/Delete',
+	// 	label: 'Edit / Delete',
+	// 	minWidth: 170,
+	// 	align: 'center',
+	// 	format: (value) => value.toLocaleString('en-US'),
+	// },
 ];
 
 const HRAgencies = () => {
+	function createData(name, code, population, size) {
+		const density = population / size;
+		return { name, code, population, size, density };
+	}
+
+	const [dataRows, setDataRows] = useState([
+		createData('India', 'IN', 1324171354, 3287263),
+		createData('China', 'CN', 1403500365, 9596961),
+		createData('Italy', 'IT', 60483973, 301340),
+		createData('United States', 'US', 327167434, 9833520),
+		createData('Canada', 'CA', 37602103, 9984670),
+		createData('Australia', 'AU', 25475400, 7692024),
+		createData('Germany', 'DE', 83019200, 357578),
+		createData('Ireland', 'IE', 4857000, 70273),
+		createData('Mexico', 'MX', 126577691, 1972550),
+		createData('Japan', 'JP', 126317000, 377973),
+		createData('France', 'FR', 67022000, 640679),
+		createData('United Kingdom', 'GB', 67545757, 242495),
+		createData('Russia', 'RU', 146793744, 17098246),
+		createData('Nigeria', 'NG', 200962417, 923768),
+		createData('Brazil', 'BR', 210147125, 8515767),
+	]);
+
 	const [page, setPage] = React.useState(0);
 	const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
@@ -76,6 +76,19 @@ const HRAgencies = () => {
 	const handleChangeRowsPerPage = (event) => {
 		setRowsPerPage(+event.target.value);
 		setPage(0);
+	};
+
+	const handleDelete = (id) => {
+		console.log(`Delete row with id ${id}`);
+		setDataRows(
+			dataRows.filter((item) => {
+				return `${item.code}` !== id;
+			})
+		);
+	};
+
+	const handleEdit = (id) => {
+		console.log(`Edit row with id ${id}`);
 	};
 	return (
 		<React.Fragment>
@@ -95,7 +108,6 @@ const HRAgencies = () => {
 						justifyContent: 'space-around',
 						alignItems: 'center',
 						height: '100%',
-
 						background:
 							'linear-gradient(4deg, rgba(255,255,255,1) 0%, rgba(214,221,232,1) 81%)',
 					}}
@@ -112,7 +124,7 @@ const HRAgencies = () => {
 						}}
 					>
 						{/* <Container> */}
-						<PageTitle>Applications</PageTitle>
+						<PageTitle>Job Applications</PageTitle>
 						{/* </Container> */}
 
 						<Card variant='outlined' sx={{ maxWidth: '345px' }}>
@@ -124,7 +136,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Applications
+									Job Applications
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -145,7 +157,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Applications
+									Job Applications
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -166,7 +178,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Applications
+									Job Applications
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -211,7 +223,7 @@ const HRAgencies = () => {
 										</TableRow>
 									</TableHead>
 									<TableBody>
-										{rows
+										{dataRows
 											.slice(
 												page * rowsPerPage,
 												page * rowsPerPage + rowsPerPage
@@ -226,6 +238,7 @@ const HRAgencies = () => {
 													>
 														{columns.map((column) => {
 															const value = row[column.id];
+
 															return (
 																<TableCell key={column.id} align={column.align}>
 																	{column.format && typeof value === 'number'
@@ -234,6 +247,33 @@ const HRAgencies = () => {
 																</TableCell>
 															);
 														})}
+														<TableCell
+															sx={{
+																display: 'flex',
+																alignItems: 'center',
+																justifyContent: 'center',
+															}}
+														>
+															<Button
+																variant='contained'
+																color='primary'
+																onClick={() => handleEdit(row.code)}
+																sx={{
+																	width: 'auto',
+																	margin: '0 1.5rem',
+																}}
+															>
+																Edit
+															</Button>
+
+															<Button
+																variant='contained'
+																color='secondary'
+																onClick={() => handleDelete(row.code)}
+															>
+																Delete
+															</Button>
+														</TableCell>
 													</TableRow>
 												);
 											})}
@@ -243,7 +283,7 @@ const HRAgencies = () => {
 							<TablePagination
 								rowsPerPageOptions={[10, 25, 100]}
 								component='div'
-								count={rows.length}
+								count={dataRows.length}
 								rowsPerPage={rowsPerPage}
 								page={page}
 								onPageChange={handleChangePage}
@@ -251,7 +291,6 @@ const HRAgencies = () => {
 							/>
 						</Paper>
 					</Box>
-					{/* </Paper> */}
 				</Paper>
 			</Box>
 		</React.Fragment>
