@@ -15,6 +15,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import { NavLink } from 'react-router-dom';
 
 const columns = [
 	{ id: 'name', label: 'Name', minWidth: 170 },
@@ -206,6 +207,22 @@ const HRAgencies = () => {
 							<Typography variant='h4'>Agency List</Typography>{' '}
 						</PageTitle>
 
+						<Button
+							component={NavLink}
+							to='/AddHRAgency'
+							variant='contained'
+							color='success'
+							onClick={() => console.log('Add Button Clicked')}
+							sx={{
+								display: 'flex',
+								justifyContent: 'flex-end',
+								alignItems: 'center',
+								margin: '1rem auto 2rem',
+							}}
+						>
+							{' '}
+							Add a new Record
+						</Button>
 						<Paper sx={{ width: '100%', overflow: 'hidden' }}>
 							<TableContainer sx={{ maxHeight: 440 }}>
 								<Table stickyHeader aria-label='sticky table'>

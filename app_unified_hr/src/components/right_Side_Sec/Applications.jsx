@@ -42,7 +42,7 @@ const columns = [
 	// },
 ];
 
-const HRAgencies = () => {
+const Applications = () => {
 	function createData(name, code, population, size) {
 		const density = population / size;
 		return { name, code, population, size, density };
@@ -124,7 +124,7 @@ const HRAgencies = () => {
 						}}
 					>
 						{/* <Container> */}
-						<PageTitle>Job Applications</PageTitle>
+						<PageTitle>Applications</PageTitle>
 						{/* </Container> */}
 
 						<Card variant='outlined' sx={{ maxWidth: '345px' }}>
@@ -136,7 +136,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Job Applications
+									Applications
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -157,7 +157,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Job Applications
+									Applications
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -178,7 +178,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Job Applications
+									Applications
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -206,6 +206,19 @@ const HRAgencies = () => {
 							<Typography variant='h4'>Applications List</Typography>{' '}
 						</PageTitle>
 
+						<Button
+							variant='contained'
+							color='success'
+							onClick={() => console.log('Add Button Clicked')}
+							sx={{
+								display: 'flex',
+								justifyContent: 'flex-end',
+								alignItems: 'center',
+								margin: '1rem auto 2rem',
+							}}
+						>
+							Add a new Record
+						</Button>
 						<Paper sx={{ width: '100%', overflow: 'hidden' }}>
 							<TableContainer sx={{ maxHeight: 440 }}>
 								<Table stickyHeader aria-label='sticky table'>
@@ -297,4 +310,4 @@ const HRAgencies = () => {
 	);
 };
 
-export default HRAgencies;
+export default Applications;

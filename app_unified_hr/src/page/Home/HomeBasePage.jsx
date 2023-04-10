@@ -8,6 +8,8 @@ import HRAgencies from '../../components/right_Side_Sec/HRAgencies';
 import Candidates from '../../components/right_Side_Sec/Candidates';
 import Applications from '../../components/right_Side_Sec/Applications';
 import Skills from '../../components/right_Side_Sec/Skills';
+import AddHRAgency from '../../components/right_Side_Sec/AddHRAgency';
+import AddCandidate from '../../components/right_Side_Sec/AddCandidate';
 const Container1 = styled(Container)({
 	height: '100svh',
 	width: '100vw',
@@ -91,6 +93,8 @@ const HomeBase = () => {
 							<Route path='/candidates' element={<Candidates />}></Route>
 							<Route path='/applications' element={<Applications />}></Route>
 							<Route path='/skills' element={<Skills />}></Route>
+							<Route path='/AddHRAgency' element={<AddHRAgency />}></Route>
+							<Route path='/AddCandidate' element={<AddCandidate />}></Route>
 						</Routes>
 					</Box>
 				</BottomSec>

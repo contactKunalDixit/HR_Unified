@@ -42,7 +42,7 @@ const columns = [
 	// },
 ];
 
-const HRAgencies = () => {
+const Skills = () => {
 	function createData(name, code, population, size) {
 		const density = population / size;
 		return { name, code, population, size, density };
@@ -136,7 +136,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Skill Info
+									Skills
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -157,7 +157,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Skill Info
+									Skills
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -178,7 +178,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Skill Info
+									Skills
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -203,9 +203,22 @@ const HRAgencies = () => {
 						}}
 					>
 						<PageTitle>
-							<Typography variant='h4'>Skill Info List</Typography>{' '}
+							<Typography variant='h4'>Skills List</Typography>{' '}
 						</PageTitle>
 
+						<Button
+							variant='contained'
+							color='success'
+							onClick={() => console.log('Add Button Clicked')}
+							sx={{
+								display: 'flex',
+								justifyContent: 'flex-end',
+								alignItems: 'center',
+								margin: '1rem auto 2rem',
+							}}
+						>
+							Add a new Record
+						</Button>
 						<Paper sx={{ width: '100%', overflow: 'hidden' }}>
 							<TableContainer sx={{ maxHeight: 440 }}>
 								<Table stickyHeader aria-label='sticky table'>
@@ -297,4 +310,4 @@ const HRAgencies = () => {
 	);
 };
 
-export default HRAgencies;
+export default Skills;

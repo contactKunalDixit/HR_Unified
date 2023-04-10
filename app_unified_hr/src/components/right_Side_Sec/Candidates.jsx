@@ -15,6 +15,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import { NavLink } from 'react-router-dom';
 
 const columns = [
 	{ id: 'name', label: 'Name', minWidth: 170 },
@@ -42,7 +43,7 @@ const columns = [
 	// },
 ];
 
-const HRAgencies = () => {
+const Candidates = () => {
 	function createData(name, code, population, size) {
 		const density = population / size;
 		return { name, code, population, size, density };
@@ -136,7 +137,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Candidates_Info
+									Candidates
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -157,7 +158,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Candidates_Info
+									Candidates
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -178,7 +179,7 @@ const HRAgencies = () => {
 							/>
 							<CardContent>
 								<Typography gutterBottom variant='h5' component='div'>
-									Candidates_Info
+									Candidates
 								</Typography>
 								<Typography variant='body2' color='text.secondary'>
 									Lizards are a widespread group of squamate reptiles, with over
@@ -203,9 +204,24 @@ const HRAgencies = () => {
 						}}
 					>
 						<PageTitle>
-							<Typography variant='h4'>Candidates_Info</Typography>{' '}
+							<Typography variant='h4'>Candidates List</Typography>{' '}
 						</PageTitle>
 
+						<Button
+							component={NavLink}
+							to='/AddCandidate'
+							variant='contained'
+							color='success'
+							onClick={() => console.log('Add Button Clicked')}
+							sx={{
+								display: 'flex',
+								justifyContent: 'flex-end',
+								alignItems: 'center',
+								margin: '1rem auto 2rem',
+							}}
+						>
+							Add a new Record
+						</Button>
 						<Paper sx={{ width: '100%', overflow: 'hidden' }}>
 							<TableContainer sx={{ maxHeight: 440 }}>
 								<Table stickyHeader aria-label='sticky table'>
@@ -297,4 +313,4 @@ const HRAgencies = () => {
 	);
 };
 
-export default HRAgencies;
+export default Candidates;
