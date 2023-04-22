@@ -39,7 +39,7 @@ const DashboardSec = () => {
 							alignItems: 'space-evenly',
 							justifyContent: 'space-evenly',
 							flexWrap: 'wrap',
-							gap: '2rem',
+							gap: '1.2rem',
 							marginTop: '1rem',
 						}}
 					>

@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import FormInputSection from '../../components/FormInputSection/FormInputSection';
 
+// ! Use Ref hook to login with ID and Password throughout : Refer devLama Video
+
 const LoginPage = () => {
 	return (
 		<React.Fragment>

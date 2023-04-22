@@ -1,3 +1,8 @@
+# 1. Add validation schema logic from Formik in AddHRAgency and AddCandidate form
+
+## 2. Tables and subsequent Titles in HR_Agencies, Candidates, Applications and Skills needs to be rectified. 
+
+
 <!-- As an HR oriented app, your dashboard page may contain various types of data analytics summaries that help users to make informed decisions. Here are some examples:
 
 Headcount Summary: This summary provides a quick overview of the total number of employees, new hires, terminations, and open positions.
@@ -84,5 +89,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-

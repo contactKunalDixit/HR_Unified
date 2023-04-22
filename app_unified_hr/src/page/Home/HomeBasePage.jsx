@@ -10,6 +10,9 @@ import Applications from '../../components/right_Side_Sec/Applications';
 import Skills from '../../components/right_Side_Sec/Skills';
 import AddHRAgency from '../../components/right_Side_Sec/AddHRAgency';
 import AddCandidate from '../../components/right_Side_Sec/AddCandidate';
+import AddApplications from '../../components/right_Side_Sec/AddApplications';
+import AddSkills from '../../components/right_Side_Sec/AddSkills';
+
 const Container1 = styled(Container)({
 	height: '100svh',
 	width: '100vw',
@@ -95,6 +98,11 @@ const HomeBase = () => {
 							<Route path='/skills' element={<Skills />}></Route>
 							<Route path='/AddHRAgency' element={<AddHRAgency />}></Route>
 							<Route path='/AddCandidate' element={<AddCandidate />}></Route>
+							<Route
+								path='/AddApplications'
+								element={<AddApplications />}
+							></Route>
+							<Route path='/AddSkills' element={<AddSkills />}></Route>
 						</Routes>
 					</Box>
 				</BottomSec>

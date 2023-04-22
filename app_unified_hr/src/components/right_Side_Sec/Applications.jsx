@@ -15,6 +15,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import { NavLink } from 'react-router-dom';
+import AddApplications from './AddApplications';
 
 const columns = [
 	{ id: 'name', label: 'Name', minWidth: 170 },
@@ -206,7 +208,9 @@ const Applications = () => {
 							<Typography variant='h4'>Applications List</Typography>{' '}
 						</PageTitle>
 
-						<Button
+						{/* <Button
+							component={NavLink}
+							to='/AddApplications'
 							variant='contained'
 							color='success'
 							onClick={() => console.log('Add Button Clicked')}
@@ -218,7 +222,7 @@ const Applications = () => {
 							}}
 						>
 							Add a new Record
-						</Button>
+						</Button> */}
 						<Paper sx={{ width: '100%', overflow: 'hidden' }}>
 							<TableContainer sx={{ maxHeight: 440 }}>
 								<Table stickyHeader aria-label='sticky table'>
